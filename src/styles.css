@@ -1,0 +1,30 @@
+.container {
+  margin: 40px;
+}
+
+body {
+  background-color: #fef;
+}
+
+/* RUBBER DUCK
+- Eye lid appears (was transparent)but it's not there
+- Eye lid moves down
+- Eye lid moves up
+
+
+*/
+/* 
+#rightLid,
+#leftLid {
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-name: closingLid;
+}
+
+@keyframes closingLid {
+  from {
+    opacity: 0;
+  }
+  to {
+  }
+} */

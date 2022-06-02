@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link href="./src/styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="container">
+      <svg
+        width="294"
+        height="320"
+        viewBox="0 0 294 320"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          id="hairLeft"
+          d="M140.942 0.652816C124.849 9.17905 116.341 14.4832 111.409 34.3676L154.746 32.4808C142.946 21.7376 139.631 14.8459 140.942 0.652816Z"
+          fill="url(#hairPaint1)"
+        />
+        <path
+          id="hairRight"
+          d="M177.434 6.99926C162.113 11.2793 153.85 14.242 145.617 30.7336L182.56 37.7293C174.806 25.9306 173.421 19.2117 177.434 6.99926Z"
+          fill="url(#hairPaint2)"
+        />
+        <ellipse
+          id="head"
+          cx="147"
+          cy="173.5"
+          rx="147"
+          ry="146.5"
+          fill="url(#headPaint)"
+        />
+        <!-- ################################################# -->
+        <!-- #                                               # -->
+        <!-- #              LEFT EYE                         # -->
+        <!-- #                                               # -->
+        <!-- ################################################# -->
+        <g id="leftEye">
+          <circle id="leftEyeWhite" cx="83" cy="135" r="32" fill="white" />
+          <!-- <ellipse
+            id="leftEyeBlueBack"
+            cx="89"
+            cy="132"
+            rx="18"
+            ry="17"
+            fill="#D9D9D9"
+          /> -->
+          <ellipse
+            id="leftEyeBlue"
+            cx="89"
+            cy="132"
+            rx="18"
+            ry="17"
+            fill="#3F3FD6"
+          >
+            <animate
+              attributeName="cx"
+              dur="9s"
+              values="89; 77; 71; 93; 89;"
+              repeatCount="indefinite"/>  
+
+              <animate attributeName="cy" dur="9s" values="129; 145; 129; 129;"
+            
+              repeatCount="indefinite"
+             
+            />
+          
+            <!--     -->
+
+            <!-- <animate attributeName="cy" dur="10s" values="5%; 55%;5%" /> -->
+          </ellipse>
+
+          <!-- <ellipse
+            id="leftEyeBigReflection"
+            cx="85"
+            cy="125.5"
+            rx="4"
+            ry="3.5"
+            fill="white"
+          >
+            <animate
+              attributeName="cx"
+              dur="5"
+              values="85;75;"
+              repeatCount="indefinite"
+             
+            />
+          </ellipse>
+
+          <ellipse
+            id="leftEyeSmallReflection"
+            cx="76.5"
+            cy="131"
+            rx="2.5"
+            ry="2"
+            fill="white"
+          >
+            <animate
+              attributeName="cx"
+              dur="5"
+              values="76.5;66.5;"
+              repeatCount="indefinite"
+            />
+          </ellipse> -->
+          <!-- <circle
+            id="leftOne"
+            cx="89"
+            cy="132"
+            r="32"
+            fill="url(#paintEyelidOne)"
+          /> -->
+          <!-- <circle id="leftTwo"" cx="255" cy="32" r="32"
+          fill="url(#paintEyelidTwo)" /> -->
+        </g>
+        <!-- ################################################# -->
+        <!-- #                                               # -->
+        <!-- #             RIGHT EYE                         # -->
+        <!-- #                                               # -->
+        <!-- ################################################# -->
+        <g id="rightEye">
+          <circle id="rightEyeWhite" cx="206" cy="135" r="32" fill="white" />
+          <ellipse
+            id="rightEyeBlue"
+            cx="212"
+            cy="132"
+            rx="18"
+            ry="17"
+            fill="#3F3FD6">
+
+            <animate
+            attributeName="cx"
+            dur="9s"
+            values="212; 200; 194; 216; 212;"
+            repeatCount="indefinite"/>  
+
+            <animate attributeName="cy" dur="9s" values="129; 145; 129; 129;"
+          
+            repeatCount="indefinite"
+           
+          />
+
+          </ellipse>
+
+          <!-- values="89; 77; 71; 93; 89;" -->
+          <!-- <ellipse
+            id="rightEyeBigReflection"
+            cx="192"
+            cy="125.5"
+            rx="4"
+            ry="3.5"
+            fill="white"
+          />
+          <ellipse
+            id="rightEyeSmallReflection"
+            cx="185.5"
+            cy="132"
+            rx="2.5"
+            ry="2"
+            fill="white"
+          /> -->
+
+          <!-- <circle
+            id="eyeLidRight"
+            cx="206"
+            cy="135"
+            r="32"
+            fill="url(#paintEyelidOneR)"
+          /> -->
+        </g>
+        <!-- ################################################# -->
+        <!-- #                                               # -->
+        <!-- #             MOUTH                             # -->
+        <!-- #                                               # -->
+        <!-- ################################################# -->
+        <g id="mouth">
+          <rect id="lips" x="97" y="186" width="101" height="4" fill="black" />
+          <path
+            id="leftTooth"
+            d="M121.869 207.003C114.003 202.958 109.825 200.403 107 190.13L127.676 190C122.316 195.923 120.904 199.613 121.869 207.003Z"
+            fill="white"
+          />
+          <path
+            id="rightTooth"
+            d="M168.869 207.503C169.445 201.049 168.717 197.291 164 190.13L184.676 190C181.951 197.611 178.851 201.525 168.869 207.503Z"
+            fill="white"
+          />
+          <path
+            id="longSaliva"
+            d="M101 190H107V248C107 249.657 105.657 251 104 251V251C102.343 251 101 249.657 101 248V190Z"
+            fill="#B4E5F0"
+          />
+          <circle id="dropSaliva" cx="104" cy="262" r="3" fill="#B4E5F0" />
+        </g>
+
+        <defs>
+          <linearGradient
+            id="hairPaint1"
+            x1="138.5"
+            y1="34"
+            x2="119.5"
+            y2="-29.5"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset="0.037889" stop-color="#4DC739" />
+            <stop offset="0.57865" stop-color="#809F26" stop-opacity="0" />
+          </linearGradient>
+
+          <radialGradient
+            id="hairPaint2"
+            cx="0"
+            cy="0"
+            r="1"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(167 25) rotate(-96.8428) scale(50.3587 64.7558)"
+          >
+            <stop stop-color="#4DC739" />
+            <stop offset="0.769419" stop-color="#4DC739" stop-opacity="0" />
+          </radialGradient>
+
+          <radialGradient
+            id="headPaint"
+            cx="0"
+            cy="0"
+            r="1"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(147 173.5) rotate(90) scale(146.5 147)"
+          >
+            <stop stop-color="#B0E41A" />
+            <stop offset="1" stop-color="#82C64E" />
+          </radialGradient>
+
+          <radialGradient
+            id="paintEyelidOneR"
+            cx="0"
+            cy="0"
+            r="1"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(32 32) rotate(90) scale(32)"
+          >
+            <stop stop-color="#B0E41A" />
+            <stop offset="1" stop-color="#82C64E" />
+          </radialGradient>
+          <radialGradient
+            id="paintEyelidOne"
+            cx="0"
+            cy="0"
+            r="1"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(32 32) rotate(90) scale(32)"
+          >
+            <stop stop-color="#B0E41A" />
+            <stop offset="1" stop-color="#82C64E" />
+          </radialGradient>
+          <radialGradient
+            id="paintEyelidTwo"
+            cx="0"
+            cy="0"
+            r="1"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(155 32) rotate(90) scale(32)"
+          >
+            <stop stop-color="#B0E41A" />
+            <stop offset="1" stop-color="#82C64E" />
+          </radialGradient>
+        </defs>
+      </svg>
+    </div>
+
+    <!-- ################################################# -->
+    <!-- #                                               # -->
+    <!-- #             closed-eyes face                  # -->
+    <!-- #                                               # -->
+    <!-- ################################################# -->
+
+    <div class="container">
+      <svg
+        width="294"
+        height="320"
+        viewBox="0 0 294 320"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M140.942 0.652816C124.849 9.17905 116.341 14.4832 111.409 34.3676L154.746 32.4808C142.946 21.7376 139.631 14.8459 140.942 0.652816Z"
+          fill="url(#paint0_linear_8_24)"
+        />
+        <path
+          d="M177.434 6.99926C162.113 11.2793 153.85 14.242 145.617 30.7336L182.56 37.7293C174.806 25.9306 173.421 19.2117 177.434 6.99926Z"
+          fill="url(#paint1_radial_8_24)"
+        />
+        <ellipse
+          cx="147"
+          cy="173.5"
+          rx="147"
+          ry="146.5"
+          fill="url(#paint2_radial_8_24)"
+        />
+        <!-- <circle id="leftEye" cx="83" cy="135" r="32" fill="white"> -->
+
+        <ellipse id="leftEye" cx="83" cy="135" rx="32" ry="32" fill="white">
+        </ellipse>
+
+        <circle cx="206" cy="135" r="32" fill="white" /> 
+        <ellipse cx="89" cy="132" rx="18" ry="17" fill="#D9D9D9" />
+        <ellipse cx="89" cy="132" rx="18" ry="17" fill="#3F3FD6" />
+        <ellipse cx="198" cy="132" rx="18" ry="17" fill="#3F3FD6" />
+        <rect x="97" y="186" width="101" height="4" fill="black" />
+        <path
+          d="M121.869 207.003C114.003 202.958 109.825 200.403 107 190.13L127.676 190C122.316 195.923 120.904 199.613 121.869 207.003Z"
+          fill="white"
+        />
+        <path
+          d="M168.869 207.503C169.445 201.049 168.717 197.291 164 190.13L184.676 190C181.951 197.611 178.851 201.525 168.869 207.503Z"
+          fill="white"
+        />
+        <path
+          d="M101 190H107V248C107 249.657 105.657 251 104 251V251C102.343 251 101 249.657 101 248V190Z"
+          fill="#B4E5F0"
+        />
+        <circle cx="104" cy="262" r="3" fill="#B4E5F0" />
+        <ellipse cx="85" cy="125.5" rx="4" ry="3.5" fill="white" />
+        <ellipse cx="76.5" cy="131" rx="2.5" ry="2" fill="white" />
+        <ellipse cx="185.5" cy="132" rx="2.5" ry="2" fill="white" />
+        <ellipse cx="192" cy="125.5" rx="4" ry="3.5" fill="white" />
+        <!-- <circle
+          id="leftLid"
+          cx="83"
+          cy="135"
+          r="32"
+          fill="url(#paint3_radial_8_24)"
+        /> -->
+        <!-- <circle
+          id="rightLid"
+          cx="206"
+          cy="135"
+          r="32"
+          fill="url(#paint3_radial_8_24)"
+        > -->
+          <!-- <animate
+            attributeName="cy"
+            values="150;100;140"
+            dur="5s"
+            repeatCount="indefinite"
+          />  -->
+        </circle>
+
+        <!-- <ellipse cx="50" cy="50" rx="25">
+          <animate
+            attributeName="ry"
+            values="0;10;00"
+            dur="3s"
+            repeatCount="indefinite"
+          />
+        </ellipse> -->
+
+        <defs>
+          <linearGradient
+            id="paint0_linear_8_24"
+            x1="138.5"
+            y1="34"
+            x2="119.5"
+            y2="-29.5"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset="0.037889" stop-color="#4DC739" />
+            <stop offset="0.57865" stop-color="#809F26" stop-opacity="0" />
+          </linearGradient>
+          <radialGradient
+            id="paint1_radial_8_24"
+            cx="0"
+            cy="0"
+            r="1"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(167 25) rotate(-96.8428) scale(50.3587 64.7558)"
+          >
+            <stop stop-color="#4DC739" />
+            <stop offset="0.769419" stop-color="#4DC739" stop-opacity="0" />
+          </radialGradient>
+          <radialGradient
+            id="paint2_radial_8_24"
+            cx="0"
+            cy="0"
+            r="1"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(147 173.5) rotate(90) scale(146.5 147)"
+          >
+            <stop stop-color="#B0E41A" />
+            <stop offset="1" stop-color="#82C64E" />
+          </radialGradient>
+          <radialGradient
+            id="paint3_radial_8_24"
+            cx="0"
+            cy="0"
+            r="1"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(83 135) rotate(90) scale(32)"
+          >
+            <stop stop-color="#B0E41A" />
+            <stop offset="1" stop-color="#82C64E" />
+          </radialGradient>
+
+          <radialGradient
+            id="paint4_radial_8_24"
+            cx="0"
+            cy="0"
+            r="1"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(206 135) rotate(90) scale(32)"
+          >
+            <stop stop-color="#B0E41A" />
+            <stop offset="1" stop-color="#82C64E" />
+          </radialGradient>
+        </defs>
+      </svg>
+
+      <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="50" cy="50" rx="25">
+          <animate
+            attributeName="ry"
+            values="0;10;00"
+            dur="3s"
+            repeatCount="indefinite"
+          />
+        </ellipse>
+        <ellipse cx="150" cy="50" rx="25" ry="25">
+          <animate
+            attributeName="rx"
+            values="0;20;0"
+            dur="10s"
+            repeatCount="indefinite"
+          />
+        </ellipse>
+        <ellipse cx="250" cy="50" rx="50" ry="25">
+          <animate
+            attributeName="rx"
+            values="0;20;0"
+            dur="10s"
+            repeatCount="indefinite"
+          />
+          <animate
+            attributeName="ry"
+            values="0;20;0"
+            dur="10s"
+            repeatCount="indefinite"
+          />
+        </ellipse>
+
+        <rect x="20" y="120" width="60" height="60" rx="0" ry="15">
+          <animate
+            attributeName="rx"
+            values="0;20;0"
+            dur="10s"
+            repeatCount="indefinite"
+          />
+        </rect>
+        <rect x="120" y="120" width="60" height="60" rx="15" ry="15">
+          <animate
+            attributeName="ry"
+            values="0;20;0"
+            dur="10s"
+            repeatCount="indefinite"
+          />
+        </rect>
+        <rect x="220" y="120" width="60" height="60" rx="150" ry="15">
+          <animate
+            attributeName="ry"
+            values="0;50;0"
+            dur="10s"
+            repeatCount="indefinite"
+          />
+          <animate
+            attributeName="rx"
+            values="0;50;0"
+            dur="10s"
+            repeatCount="indefinite"
+          />
+        </rect>
+
+        <ellipse cx="50" cy="250" rx="25" ry="25">
+          <animate
+            attributeName="cx"
+            values="0;50;0"
+            dur="10s"
+            repeatCount="indefinite"
+          />
+        </ellipse>
+        <ellipse cx="150" cy="250" rx="25" ry="25">
+          <animate
+            attributeName="cy"
+            values="300;250;300"
+            dur="10s"
+            repeatCount="indefinite"
+          />
+        </ellipse>
+        <ellipse cx="250" cy="250" rx="50" ry="25">
+          <animate
+            attributeName="ry"
+            values="200;250;200"
+            dur="10s"
+            repeatCount="indefinite"
+          />
+          <animate
+            attributeName="rx"
+            values="0;20;0"
+            dur="10s"
+            repeatCount="indefinite"
+          />
+          <animate
+            attributeName="ry"
+            values="0;20;0"
+            dur="10s"
+            repeatCount="indefinite"
+          />
+        </ellipse>
+      </svg>
+    </div>
+  </body>
+</html>
